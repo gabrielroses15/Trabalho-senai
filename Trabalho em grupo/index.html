@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Site de Roberto</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <main>
+        <h1> Site referente ao Roberto</h1>
+        <div id="RobertoIm">
+            <img src="Imagem/sapo roberto.jpg" height="300" width="300" > 
+            <p> Esse é o Roberto, ele ama sapo pois pula muito alto</p> 
+            <button id="button4" onclick="button4()">Teste</button>
+        </div>
+        <div id="RobertoFi">  
+            <img src="Imagem/sapinhos.jpg" height="300" width="300">
+            <p id="mude"> Filhos de Roberto ou fan de roberto quem saber.... Só Roberto.  </p>
+            <button onclick="button3()" id="button3">Não clique aqui</button>
+        </div>
+        <div id="RobertoSu">
+            <img src="Imagem/download.jpg" height="300"
+            width="300">
+           <p> Roberto vai contar uma história:</p>
+           <p id=colocaapalavra></p>
+           <button id="button2" onclick="button2()">Botão irresistível ao clique</button>
+        </div> 
+        <div id="RobertoRe">
+            <img src="Imagem/Roberto de Relogio.png" height="300" width="300">
+            <p> Ver a hora com Roberto</p>
+            <button onclick="Relogio()" name= 4> Aperte esse botão para ver hora </button>
+            <p id= "demo"></p>
+        </div>
+    </main>
+    <Script>
+        function Relogio() {//button1
+            const d = new Date();
+            document.getElementById("demo").innerHTML = d  
+        }
+        function button2(){//button2
+    document.getElementById("button2").innerHTML = "Você não resistou jovem."
+    document.getElementById("button2").style.fontWeight = "italic"
+    document.getElementById("button2").style.fontSize = "25px"
+    document.getElementById("colocaapalavra").innerHTML = "Era uma vez um jovem personagem, no qual viu um botão em que foi jogado magia, o jovem não reistiu ao botão e a sua magia e acabou clicando no mesmo isto fez com que ele modificasse o site que regia o universo, então como o site foi modificado o univeso também se modificou."
+    document.getElementById("colocaapalavra").fontWeight = "bold"
+}
+function button3(){//button3
+    document.getElementById("button3").innerHTML = "Roberto de Roberto não Roberto de aberto"
+    document.getElementById("mude").innerHTML = "Roberto de Roberto  ou Roberto de Roberto quem Roberto... Só Roberto"
+    document.getElementById("button3").style.color = "red"
+}
+function button4(){//button4
+    document.getElementById("button4").innerHTML = "Hehehehe vc clicou"
+}
+    </Script>
+</body>
+</html>
