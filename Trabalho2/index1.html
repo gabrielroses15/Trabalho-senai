@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Chaves 4°</title>
+</head>
+<body id="corpo">
+    <p id="paragrafo">Este é o nível 4, boa sorte :)</p>
+    <button onclick="dica()" id="botao1">Pedir uma dica</button>
+    <button onclick="nada()" id="botao2">Nada por aqui</button>
+    <button onclick="testes()" id="botao2">Testes</button>
+    <button onclick="macrabo()" id="botao3">Não apertar em momento nenhum</button>
+    <a href="pagina2.html">Próxima página</a>
+    <div id="lindo">
+        <button>exemplo</button>
+    </div>
+    <div id="lindo 2">
+        <p>exemplo 2</p>
+    </div>
+    <script>
+document.getElementById("lindo").style.backgroundColor = "red"
+document.getElementById("lindo 2").style.backgroundColor = "blue"
+
+
+        function dica(){
+            document.getElementById("paragrafo").innerHTML = "Preste atenção em cada MAIUSCULO >:"
+        }
+        function nada(){
+            document.getElementById("paragrafo").innerHTML = "Bernarde Estevan Uzentus Succubus"
+        }
