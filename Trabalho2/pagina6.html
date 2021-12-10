@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Chaves 6°</title>
+</head>
+<body id="corpo">
+    <p id="paragrafo">Obrigado, boa noite e até</p>
+    <button onclick="chaves()" id="botao1">Modificar texto</button>
+    <button onclick="seva()" id="botao2">Voltar a história ao normal</button>
+    <button onclick="macrabo()" id="botao3">Não apertar em momento nenhum</button>
+    <script>
+        function chaves(){
+            document.getElementById("paragrafo").innerHTML = "Obrigado pro ter apssado até aqui <3"
+        }
+        function seva(){
+            document.getElementById("paragrafo").innerHTML = "I Love to kill people but you are my preffer"
+        }
+        function macrabo(){
+            document.getElementById("paragrafo").innerHTML = "...bed and eat your organs and you will die for losing a lot of blood. Eu irei atrás da sua alma"
+            document.getElementById("paragrafo").style.fontWeight = "bold"
+            document.getElementById("paragrafo").style.color="Red"
+            document.getElementById("paragrafo").style.fontSize = "25px"
+            document.getElementById("corpo").style.backgroundColor = "brown"
+            document.getElementById("botao1").innerHTML = "Sim sim eu irei te"
+            document.getElementById("botao2").innerHTML = "I will kill you"
+            document.getElementById("botao3").innerHTML = "I love your blood"
+        }
+    </script>
+</body>
+</html>

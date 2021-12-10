@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Chaves 4°</title>
+</head>
+<body id="corpo">
+    <p id="paragrafo">Este é o nível 4, boa sorte :)</p>
+    <button onclick="dica()" id="botao1">Pedir uma dica</button>
+    <button onclick="nada()" id="botao2">Nada por aqui</button>
+    <button onclick="testes()" id="botao2">Testes</button>
+    <button onclick="macrabo()" id="botao3">Não apertar em momento nenhum</button>
+    <a href="pagina5.html">Próxima página</a>
+    <script>
+        function dica(){
+            document.getElementById("paragrafo").innerHTML = "Preste atenção em cada MAIUSCULO >:"
+        }
+        function nada(){
+            document.getElementById("paragrafo").innerHTML = "Bernarde Estevan Uzentus Succubus Zeuzs Einsten Beinser Unsider"
+        }
+        function macrabo(){
+            document.getElementById("paragrafo").innerHTML = "I will go behind your..."
+            document.getElementById("paragrafo").style.fontWeight = "bold"
+            document.getElementById("paragrafo").style.color="DarkRed"
+            document.getElementById("paragrafo").style.fontSize = "25px"
+            document.getElementById("corpo").style.backgroundColor = "brown"
+            document.getElementById("botao1").innerHTML = ""
+            document.getElementById("botao2").innerHTML = ""
+            document.getElementById("botao3").innerHTML = ""
+            document.getElementById("botao1").style.opacity = "0"
+            document.getElementById("botao2").style.opacity = "0"
+            document.getElementById("botao3").style.opacity = "0"
+        }
+    </script>
+</body>
+</html>

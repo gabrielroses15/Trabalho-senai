@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Chaves 5°</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body id="corpo">
+    <p id="paragrafo">Mais um dia onde chaves brinca em sua casa, joga bola e se diverte com seus amigos</p>
+    <button onclick="chaves()" id="botao1">Macabrar a história</button>
+    <button onclick="seva()" id="botao2">Voltar a história ao normal</button>
+    <button onclick="macrabo()" id="botao3">Não apertar em momento nenhum</button>
+    <button onclick="lvlpass()" id="botao4"></button>
+    <a href="#" id="chamada"></a>
+    <a href="pagina4.html">Página anterior</a>
+    <script>
+        document.getElementById("botao4").style.opacity = "0"
+        var a = document.getElementById("chamada");
+        var pass=false; level=false;
+        function chaves(){
+            document.getElementById("paragrafo").innerHTML = "Mais uma noite onde chaves zoua a sua casa, joga a bola na sua prima,e se diverte com sua esposa"
+            pass=true;
+        }
+        function seva(){
+            document.getElementById("paragrafo").innerHTML = "Mais um dia onde chaves brinca em sua casa, joga bola e se diverte com seus amigos"
+            level=true;
+        }
+        function macrabo(){
+            document.getElementById("paragrafo").innerHTML = "...bed and eat your organs and you will die for losing a lot of blood. Eu irei atrás da sua alma"
+            document.getElementById("paragrafo").style.fontWeight = "bold"
+            document.getElementById("paragrafo").style.color="Red"
+            document.getElementById("paragrafo").style.fontSize = "25px"
+            document.getElementById("corpo").style.backgroundColor = "brown"
+            document.getElementById("botao1").innerHTML = "Não há volta, eu irei te matar jovem padawan"
+            document.getElementById("botao2").innerHTML = "Eu não estou brincando amigo, sabe aquela janela que vc tanto teme"
+            document.getElementById("botao3").innerHTML = "Sim eu estarei lá"
+            document.getElementById("botao4").innerHTML = "Pass level"
+            document.getElementById("botao4").style.opacity = "100"
+        }
+        function lvlpass(){
+            a.setAttribute("href", "pagina6.html")
+            document.getElementById("chamada").innerHTML = "Teste"
+        }
+    </script>
+</body>
+</html>
